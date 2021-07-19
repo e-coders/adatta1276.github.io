@@ -1,16 +1,89 @@
+html{
+  scroll-behavior: smooth;
+ 
+} 
 
-::-moz-selection { /* Code for Firefox */
-  color: rgb(0, 204, 255);
-  background: rgb(0, 76, 255);
+body {
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1lcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.fadeIn {
+	animation: fadeIn 2.5s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
+.colorChange {
+  color: rgb(0,191,255);
+  animation: changeColor 3s;
+  opacity:1;
+}
+
+@keyframes changeColor {
+  from {
+    color : white
+  }
+
+  to {
+    color:rgb(0, 191, 255)
+  }
+}
+
+/*::-moz-selection {*/ /* Code for Firefox */
+/*  color: #04d2d2;
+  background: rgb(0, 204, 255);
 }
 
 ::selection {
-  color: rgb(0, 204, 255);
-  background: rgb(0, 76, 255);
-}
+  color: #04d2d2;
+  background: rgb(0, 204, 255);
+}*/
 
  .searchEngineFinder {
     font-size: 0.01px;
+}
+
+
+/*:-webkit-scrollbar {
+    display:none;
+}*/
+
+/*cursor {
+    cursor: ;
+}*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 15 20px rgb(0, 204, 255); 
+  border-radius: 10px;
+  cursor: auto;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00bbff; 
+  border-radius: 10px;
+  cursor: auto;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00bbff; 
+  cursor: auto;
 }
 
 * {
@@ -23,6 +96,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    top:-138px;
     padding: 11px 10%;
     background-color: #24252a;
   }
@@ -35,7 +110,10 @@
   
   nav {
     order: 1;
+    /*position: relative;*/
   }
+
+  
   
   .nav__links a,
   .cta,
