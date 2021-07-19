@@ -9,6 +9,9 @@
   background: rgb(0, 76, 255);
 }
 
+ .searchEngineFinder {
+    font-size: 0.01px;
+}
 
 * {
     box-sizing: border-box;
@@ -150,7 +153,5 @@
     }
   }
 
-  .searchEngineFinder {
-    font-size: 0.01px;
-}
+ 
   
