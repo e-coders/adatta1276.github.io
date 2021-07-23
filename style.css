@@ -4,8 +4,11 @@ html{
 } 
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1lcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"); 
-  background-size:cover;
+  background-image: url("lauren-mancke-aOC7TSLb1o8-unsplash.jpg"); 
+  /*background-size:cover;*/
+  /*background-size: 1920px 1080px;*/
+  background-size: cover;
+  /* background-position-y: -1030px;*/
 }
 .fadeIn {
 	animation: fadeIn 2.5s;
@@ -96,8 +99,8 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top:-138px;
-    padding: 11px 10%;
+    top:-143px;
+    padding: 7px 10%;
     background-color: #24252a;
   }
   
