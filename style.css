@@ -101,13 +101,15 @@ body {
     position: relative;
     top:-143px;
     padding: 7px 10%;
-    background-color: #24252a;
+    background-color: rgb(36, 36, 36);
   }
   
   .logo {
-    cursor: pointer;
-    order: 3;
-    margin-left: auto;
+    position: static;
+    bottom: -30px;
+    cursor: hand;
+    order: 1;
+    margin-left: -110px;
   }
   
   nav {
@@ -119,6 +121,7 @@ body {
   
   .nav__links a,
   .cta,
+  .cta2,
   .overlay__content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -130,6 +133,9 @@ body {
     list-style: none;
     display: flex;
     font-size: 16px;
+    position: relative;
+    right: -65px;
+    
   }
   
   .nav__links li {
@@ -150,7 +156,7 @@ body {
   
   .cta {
     order: 2;
-    margin-left: 20px;
+    margin-right: -190px;
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -160,6 +166,21 @@ body {
   }
   
   .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  .cta2 {
+    order: 2;
+    margin-right: -110px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  .cta2:hover {
     background-color: rgba(0, 136, 169, 0.8);
   }
   
@@ -211,6 +232,67 @@ body {
     font-size: 60px;
     color: #edf0f1;
   }
+
+  
+  
+  .zoomInDown {
+    animation-name: zoomInDown;
+  }
+
+  @keyframes zoomInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+      -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+      animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+  }
+
+
+  .typewriter {
+    font-family: 'Ubuntu', sans-serif;
+	display: inline-block;
+}
+
+.typewriter-text {
+  position:relative; top: 280px; font-family: 'Ubuntu', sans-serif; font-size: 87px; color: rgb(255, 255, 255); margin: 0px; padding: 0px; text-align: center;
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
   
   @media screen and (max-height: 450px) {
     .overlay a {
