@@ -25,7 +25,7 @@ body {
 }
 
 .colorChange {
-  color: rgb(0,191,255);
+  color: rgb(255,255,0);
   animation: changeColor 3s;
   opacity:1;
 }
@@ -36,18 +36,18 @@ body {
   }
 
   to {
-    color:rgb(0, 191, 255)
+    color:rgb(255, 255, 0)
   }
 }
 
-/*::-moz-selection {*/ /* Code for Firefox */
-/*  color: #04d2d2;
-  background: rgb(0, 204, 255);
+/*::-moz-selection {   
+  color: #ffdd00;
+  background: rgb(255, 255, 0);
 }
 
 ::selection {
-  color: #04d2d2;
-  background: rgb(0, 204, 255);
+  color: #ffdd00;
+  background: rgb(255, 255, 0);
 }*/
 
  .searchEngineFinder {
@@ -158,30 +158,77 @@ body {
     order: 2;
     margin-right: -190px;
     padding: 9px 25px;
+    
+      /*display: block;*/
+      /*text-align: center;*/
+      /*text-decoration: none;*/
+      /*font-weight: 800;*/
+      /*font-size: 1em;*/
+      /*text-transform: uppercase;*/
+      color: white;
+      
+      
+      /*border-radius: border-rounded;*/
+      /*margin: 10px;
+      padding: 1em 3em;*/
+      background-size: 200% auto;
+      color: white;
+      box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+      background-image: linear-gradient(to right, rgb(0,204,255) 0%, /*#ff00dd 50%,*/ #ff00aa 100%);
+      transition: 0.5s;
+      
+        
+        
+    
+    
+    
+
+
     background-color: rgba(0, 136, 169, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
   }
+
+  
   
   .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-position: right center;
   }
 
   .cta2 {
     order: 2;
     margin-right: -110px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+    color: white;
+      
+      
+    /*border-radius: border-rounded;*/
+    /*margin: 10px;
+    padding: 1em 3em;*/
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background-image: linear-gradient(to right, rgb(0,204,255) 0%, /*#ff00dd 50%,*/ #ff00aa 100%);
+    transition: 0.5s;
+    
+      
+      
+  
+  
+  
+
+
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
   }
 
   .cta2:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-position: right center;
   }
   
   /* Mobile Nav */
@@ -293,6 +340,30 @@ body {
         border-color: orange; 
     }
 }
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.selectnormal ::-moz-selection ::selection {
+  color: #fff;
+  background: #fff;
+  
+}
   
   @media screen and (max-height: 450px) {
     .overlay a {
@@ -312,6 +383,7 @@ body {
     }
     .menu {
       display: initial;
+      
     }
   }
 
