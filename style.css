@@ -15,6 +15,10 @@ body {
   	opacity: 1;
 }
 
+.fadeInForThem {
+  animation: fadeIn 5s;
+}
+
 @keyframes fadeIn {
   from {
   	opacity: 0;
