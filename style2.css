@@ -103,9 +103,9 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top:-180px;
-    padding: 9px 10%;
-    background-color: #24252a;
+    top:-143px;
+    padding: 7px 10%;
+    background-color: rgb(36, 36, 36);
   }
   
   .logo {

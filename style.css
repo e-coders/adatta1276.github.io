@@ -5,6 +5,7 @@ html{
 
 body {
   background-image: url("lauren-mancke-aOC7TSLb1o8-unsplash.jpg"); 
+ 
   /*background-size:cover;*/
   /*background-size: 1920px 1080px;*/
   background-size: cover;
@@ -370,6 +371,16 @@ body {
 }
   
   @media screen and (max-height: 450px) {
+
+    body {
+      background-image: url("walling-XLqiL-rz4V8-unsplash.jpg"); 
+     
+      /*background-size:cover;*/
+      /*background-size: 1920px 1080px;*/
+      background-size: cover;
+      /* background-position-y: -1030px;*/
+    }
+
     .overlay a {
       font-size: 20px;
     }
@@ -381,6 +392,15 @@ body {
   }
   
   @media only screen and (max-width: 800px) {
+
+    body {
+      background-image: url("walling-XLqiL-rz4V8-unsplash.jpg"); 
+     
+      /*background-size:cover;*/
+      /*background-size: 1920px 1080px;*/
+      background-size: cover;
+      /* background-position-y: -1030px;*/
+    }
     .nav__links,
     .cta {
       display: none;
