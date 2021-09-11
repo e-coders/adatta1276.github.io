@@ -1,0 +1,28 @@
+.ct{
+  text-transform: uppercase;
+      padding: 0.8em;
+      width: 100px;
+      background: #0053d9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.2s;
+      position: relative;
+      overflow: hidden;
+}.ct:hover{filter: brightness(80%);
+  cursor: pointer;}
+.ct:active{transform: scale(0.92)}
+.ct2{
+  text-transform: uppercase;
+      padding: 0.8em;
+      width: 100px;
+      background: #0053d9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.2s;
+      position: relative;
+      overflow: hidden;
+}.ct2:hover{filter: brightness(80%);
+  cursor: pointer;}
+.ct2:active{transform: scale(0.92)}
